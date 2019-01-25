@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="68901" started-at="2019-01-25T14:42:57Z" finished-at="2019-01-25T14:44:06Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="68901" started-at="2019-01-25T14:42:57Z" finished-at="2019-01-25T14:44:06Z">
+      <class name="com.cleartrip.qa.base.ClearTripBase">
+        <test-method status="PASS" signature="setDriverPath()[pri:0, instance:com.cleartrip.qa.base.ClearTripBase@61832929]" name="setDriverPath" duration-ms="68817" started-at="2019-01-25T14:42:57Z" finished-at="2019-01-25T14:44:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriverPath -->
+      </class> <!-- com.cleartrip.qa.base.ClearTripBase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
