@@ -1,0 +1,9 @@
+#Design issues
+1) Created 1 base package for the followings.
+	i) Testbase class will be parent class of all classes (page class, pageTest class, utility class).
+	ii) Prerquisite (initialization of driver, properties, launch browser, pageload timeout, maximize window, delete all cookies, get(url))
+2) Created 1 config.properties file (url, browser, operating system, timouts, environment variables) 
+3) created src/test/java - has all pageTest classes.
+4) Created 1 util package for all common utility (generic functions)
+
+Still so many modifications need to make, will keep updating the file.
