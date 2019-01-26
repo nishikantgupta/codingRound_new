@@ -5,8 +5,9 @@
     <classes>
       <class name="com.cleartrip.qa.testcases.HomePageTest">
         <methods>
-          <include name="searchFlight"/>
+          <include name="teardown"/>
           <include name="setUp"/>
+          <include name="searchFlightTest"/>
         </methods>
       </class> <!-- com.cleartrip.qa.testcases.HomePageTest -->
     </classes>

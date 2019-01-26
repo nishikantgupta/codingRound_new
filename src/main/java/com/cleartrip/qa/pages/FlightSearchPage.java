@@ -1,12 +1,12 @@
-package com.cleartrip.qa.pages;
+  package com.cleartrip.qa.pages;
 
 import org.openqa.selenium.By;
 
 import com.cleartrip.qa.base.ClearTripBase;
 
-public class SearchPage extends ClearTripBase {
+public class FlightSearchPage extends ClearTripBase {
 
-	public SearchPage() {
+	public FlightSearchPage() {
 		super();
 	}
 

@@ -7,12 +7,14 @@ import org.testng.annotations.Test;
 
 import com.cleartrip.qa.base.ClearTripBase;
 import com.cleartrip.qa.pages.HomePage;
-import com.cleartrip.qa.pages.SearchPage;
+import com.cleartrip.qa.pages.HotelSearchPage;
+import com.cleartrip.qa.pages.FlightSearchPage;
 
 public class HomePageTest extends ClearTripBase{
 	
 	public HomePage homePage;
-	public SearchPage searchPage;
+	public FlightSearchPage flightSearchPage;
+	public HotelSearchPage hotelSearchPage;
 	
 	public HomePageTest() {
 		super();
@@ -22,12 +24,21 @@ public class HomePageTest extends ClearTripBase{
 	public void setUp() {
 		setDriverPath();
 		homePage = new HomePage();
+		hotelSearchPage = new HotelSearchPage();
+		
 	}
 	
 	@Test
 	public void searchFlightTest() {
-		searchPage = homePage.searchFlight();
-		Assert.assertEquals(searchPage.searchPageHeader(), true, "Page did not show search result");
+		flightSearchPage = homePage.searchFlight();
+		Assert.assertEquals(flightSearchPage.searchPageHeader(), true, "Page did not show search result");
+	}
+	
+	@Test
+	public void clickOnHotelLinkTest() {
+		hotelSearchPage = homePage.clickOnHotelLink();
+		Assert.assertTrue(hotelSearchPage.hotelSearchPageValidation(), "Navigated to wrong Page");
+		
 	}
 	
 	@AfterMethod

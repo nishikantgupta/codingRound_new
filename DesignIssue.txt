@@ -5,6 +5,8 @@
 2) Created 1 config.properties file (url, browser, operating system, timouts, environment variables) 
 3) created src/test/java - has all pageTest classes.
 4) Created 1 util package for all common utility (generic functions)
+5) Each Testcase has driver initialization code and driver reference to chrome driver. Same code on all 3 test class.
+
 
 #FlightBookingTest class Issues: -
 	i) It is home page, to search flight(wrong class name).
@@ -17,6 +19,15 @@
 	viii) Deleted FlightBooking class, since it was wrong name(felt so).
 	viii) Created HomePage for variables(elements), methods(to work on elements). HomePageTest for each Page validations.
 	ix) Create SearchPage and SearchPageTest Class as well for validation where correct search is done or not.  
+	x) No validation point for searched flights.
+	xi) Created common methods which were used repeatedly. (setDriverProperty(), selectDate(), fillLocation(), clickOnSearchButton())
+
+#HotelBookingTest class issue: - 
+	i) No selection for dates.
+	ii) No selection for item from list in localityTextBox after sendKeys().
+	iii) No Validation point for the search done for hotel. 
+	iv) Created 4 classes (HotelSearchPage, HotelSearchPageTest, SearchedHotelPage, SearchedHotelPageTest)
+	v) Put entry of checkInDate and checkOutDate in properties file. 
 
 Enhancement:- 
 	i) Removed browser.exe file from the test-output folder and used Bonigarcia dependency for key and value of system.setProperty(key, value).
