@@ -6,4 +6,18 @@
 3) created src/test/java - has all pageTest classes.
 4) Created 1 util package for all common utility (generic functions)
 
+#FlightBookingTest class Issues: -
+	i) It is home page, to search flight(wrong class name).
+	ii) Some element locator wrong.
+	iii) Date element locator wrong.
+	iv) WebElement selection as 1st element wrong.
+	v) Assertion do exactly find whether correct search is done or not?
+	vi) Thread.sleep() should not be used, when we can use explicit and implicit wait. Here everywhere implicit wait is working fine.
+	vii) I have put origin/destination/travelDate in properties file.
+	viii) Deleted FlightBooking class, since it was wrong name(felt so).
+	viii) Created HomePage for variables(elements), methods(to work on elements). HomePageTest for each Page validations.
+	ix) Create SearchPage and SearchPageTest Class as well for validation where correct search is done or not.  
+
+Enhancement:- 
+	i) Removed browser.exe file from the test-output folder and used Bonigarcia dependency for key and value of system.setProperty(key, value).
 Still so many modifications need to make, will keep updating the file.

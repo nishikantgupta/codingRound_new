@@ -2,16 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="68901" started-at="2019-01-25T14:42:57Z" finished-at="2019-01-25T14:44:06Z">
+  <suite name="Default suite" duration-ms="67720" started-at="2019-01-26T14:03:19Z" finished-at="2019-01-26T14:04:26Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="68901" started-at="2019-01-25T14:42:57Z" finished-at="2019-01-25T14:44:06Z">
-      <class name="com.cleartrip.qa.base.ClearTripBase">
-        <test-method status="PASS" signature="setDriverPath()[pri:0, instance:com.cleartrip.qa.base.ClearTripBase@61832929]" name="setDriverPath" duration-ms="68817" started-at="2019-01-25T14:42:57Z" finished-at="2019-01-25T14:44:06Z">
+    <test name="Default test" duration-ms="67720" started-at="2019-01-26T14:03:19Z" finished-at="2019-01-26T14:04:26Z">
+      <class name="com.cleartrip.qa.testcases.HomePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.cleartrip.qa.testcases.HomePageTest@42d80b78]" name="setUp" is-config="true" duration-ms="55081" started-at="2019-01-26T14:03:19Z" finished-at="2019-01-26T14:04:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setDriverPath -->
-      </class> <!-- com.cleartrip.qa.base.ClearTripBase -->
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="searchFlightTest()[pri:0, instance:com.cleartrip.qa.testcases.HomePageTest@42d80b78]" name="searchFlightTest" duration-ms="10910" started-at="2019-01-26T14:04:14Z" finished-at="2019-01-26T14:04:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchFlightTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.cleartrip.qa.testcases.HomePageTest@42d80b78]" name="teardown" is-config="true" duration-ms="1628" started-at="2019-01-26T14:04:25Z" finished-at="2019-01-26T14:04:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.cleartrip.qa.testcases.HomePageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

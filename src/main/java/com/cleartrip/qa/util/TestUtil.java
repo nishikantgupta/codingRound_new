@@ -9,10 +9,11 @@ import com.cleartrip.qa.base.ClearTripBase;
 import io.github.bonigarcia.wdm.OperatingSystem;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class TestUtil extends ClearTripBase {
-
+public class TestUtil extends ClearTripBase{
+ 
 	public static void setDriverProperty(String browser, OperatingSystem opSys) {
 		if (browser.equals("chrome")) {
+			
 			WebDriverManager.chromedriver().operatingSystem(opSys).setup();
 			driver = new ChromeDriver();
 		}
