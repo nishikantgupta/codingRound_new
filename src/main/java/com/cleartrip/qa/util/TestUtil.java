@@ -68,7 +68,7 @@ public class TestUtil extends ClearTripBase{
 		}
 	}
 	
-	public static void clickOnSearchButton(WebElement searchButton) {
+	public static void clickOnButton(WebElement searchButton) {
 		searchButton.click();
 	}
 }

@@ -1,34 +1,48 @@
 #Design issues
-1) Created 1 base package for the followings.
-	i) Testbase class will be parent class of all classes (page class, pageTest class, utility class).
-	ii) Prerquisite (initialization of driver, properties, launch browser, pageload timeout, maximize window, delete all cookies, get(url))
-2) Created 1 config.properties file (url, browser, operating system, timouts, environment variables) 
-3) created src/test/java - has all pageTest classes.
-4) Created 1 util package for all common utility (generic functions)
-5) Each Testcase has driver initialization code and driver reference to chrome driver. Same code on all 3 test class.
-
+	i) No Base class for initialization of driver, properties, launch browser, pageload timeout, maximize window, delete all cookies, get(url).
+ 	ii) No config.properties file for common variables. 
+ 	iii) Test class are there in src/main/java, should be in src/test/java.
+ 	iv) No page class defined.
+ 	v) No utility class defined for common methods, which can be used through out the classes.
+ 	vi) Each test case has driver initialization code and driver reference to chrome driver. Same code on all 3 test class.
+ 	vii) No link in between all pages test.
+	vii) setDriverPath(), only setting for chrome, if there are safari/firefox/microsoftEdge/InternetExplorer browsers... then there will be so many combinations.
 
 #FlightBookingTest class Issues: -
 	i) It is home page, to search flight(wrong class name).
-	ii) Some element locator wrong.
+	ii) Some element locator wrong(could not locate element).
 	iii) Date element locator wrong.
-	iv) WebElement selection as 1st element wrong.
-	v) Assertion do exactly find whether correct search is done or not?
-	vi) Thread.sleep() should not be used, when we can use explicit and implicit wait. Here everywhere implicit wait is working fine.
-	vii) I have put origin/destination/travelDate in properties file.
-	viii) Deleted FlightBooking class, since it was wrong name(felt so).
-	viii) Created HomePage for variables(elements), methods(to work on elements). HomePageTest for each Page validations.
-	ix) Create SearchPage and SearchPageTest Class as well for validation where correct search is done or not.  
-	x) No validation point for searched flights.
-	xi) Created common methods which were used repeatedly. (setDriverProperty(), selectDate(), fillLocation(), clickOnSearchButton())
+	iv) WebElement selection as 1st element wrong from List<WebElement>.
+	v) Assertion do exactly find whether correct search is done or not? it will not compare the for searching was correct or not.
+	vi) Thread.sleep() should not be used, when we can use explicit and implicit wait. Here everywhere implicit wait is working fine. so did not put explicit wait .
+	vii) Origin, destination, date are hard coded.
+	viii) FlightBookingTest class should be FlightSearch named, it is searching for flight not booking.
+	ix) No link in between FlightBookingTest class and other two classes.
+	x) wrong validation.
+	
 
 #HotelBookingTest class issue: - 
 	i) No selection for dates.
 	ii) No selection for item from list in localityTextBox after sendKeys().
-	iii) No Validation point for the search done for hotel. 
-	iv) Created 4 classes (HotelSearchPage, HotelSearchPageTest, SearchedHotelPage, SearchedHotelPageTest)
-	v) Put entry of checkInDate and checkOutDate in properties file. 
+	iii) No Validation point for test case. 
+	iv) No checkInDate and checkOutDate. 
+	vi) No selection of element from localityTextBox which comes dynamically.
+	vii) WebElement not initialized.
+	
+#SignInTest class issue: -
+	i) Same code for setDriverPath() and driver initialization again.
+	ii) Not switched to signIn frame before clicking on signIn button.
+	iii) id - error is wrong for message("There were errors in your submission").
+	iv) Use of ThreadSleep().
+	v) No link in between home page and signInTest page.
 
 Enhancement:- 
-	i) Removed browser.exe file from the test-output folder and used Bonigarcia dependency for key and value of system.setProperty(key, value).
-Still so many modifications need to make, will keep updating the file.
+	i) Created 1 base class as parent class for all classes for initialization of driver, properties, launch browser, pageload timeout, maximize window, delete all cookies, get(url).
+	ii) Test base class will be parent class of all classes (all page class, all pageTest class, utility class).
+	iii) Created 1 config.properties file (url, browser, operating system, timouts, environment variables, checkIn/out Date, origin, destination, travel date etc.)
+	iv) Removed browser.exe file from the test-output folder and used Bonigarcia dependency for key and value of system.setProperty(key, value).
+	v) created src/test/java - has all pageTest classes.
+	vi) create src/main/java for base, config, util and all page class.
+	vii) Created 1 util package for all common utility. (Created common methods which were used repeatedly. (setDriverProperty(), selectDate(), fillLocation(), clickOnSearchButton())
+	viii) Created Page class (FlightSearchPage, HomePage, HotelSearchPage, SearchedHotelPage, SignInPage) for variables(elements), methods(to work on elements). 
+	ix) Created PageTest class (FlightSearchPageTest, HomePageTest, HotelSearchPageTest, SearchedHotelPageTest, SignInPageTest) for all page test case. 

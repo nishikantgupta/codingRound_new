@@ -47,7 +47,7 @@ public class HotelSearchPage extends ClearTripBase {
 		
 		Select select = new Select(travellerSelection);
 		select.selectByVisibleText("1 room, 2 adults");
-		TestUtil.clickOnSearchButton(searchButton);
+		TestUtil.clickOnButton(searchButton);
 		return new SearchedHotelPage();
 	}
 	

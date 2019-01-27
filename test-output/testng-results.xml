@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21978" started-at="2019-01-26T18:46:06Z" finished-at="2019-01-26T18:46:28Z">
+  <suite name="Default suite" duration-ms="26234" started-at="2019-01-26T22:57:03Z" finished-at="2019-01-26T22:57:29Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21978" started-at="2019-01-26T18:46:06Z" finished-at="2019-01-26T18:46:28Z">
-      <class name="com.cleartrip.qa.testcases.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.cleartrip.qa.testcases.HomePageTest@42d80b78]" name="setUp" is-config="true" duration-ms="13837" started-at="2019-01-26T18:46:06Z" finished-at="2019-01-26T18:46:20Z">
+    <test name="Default test" duration-ms="26234" started-at="2019-01-26T22:57:03Z" finished-at="2019-01-26T22:57:29Z">
+      <class name="com.cleartrip.qa.testcases.SignInPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.cleartrip.qa.testcases.SignInPageTest@42d80b78]" name="setUp" is-config="true" duration-ms="19740" started-at="2019-01-26T22:57:03Z" finished-at="2019-01-26T22:57:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="searchFlightTest()[pri:0, instance:com.cleartrip.qa.testcases.HomePageTest@42d80b78]" name="searchFlightTest" duration-ms="7326" started-at="2019-01-26T18:46:20Z" finished-at="2019-01-26T18:46:27Z">
+        <test-method status="PASS" signature="errorTest()[pri:0, instance:com.cleartrip.qa.testcases.SignInPageTest@42d80b78]" name="errorTest" duration-ms="5543" started-at="2019-01-26T22:57:23Z" finished-at="2019-01-26T22:57:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchFlightTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.cleartrip.qa.testcases.HomePageTest@42d80b78]" name="teardown" is-config="true" duration-ms="749" started-at="2019-01-26T18:46:27Z" finished-at="2019-01-26T18:46:28Z">
+        </test-method> <!-- errorTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.cleartrip.qa.testcases.SignInPageTest@42d80b78]" name="tearDown" is-config="true" duration-ms="887" started-at="2019-01-26T22:57:28Z" finished-at="2019-01-26T22:57:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.cleartrip.qa.testcases.HomePageTest -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.cleartrip.qa.testcases.SignInPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
